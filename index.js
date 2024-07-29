@@ -14,17 +14,12 @@ connection();
 app.use(express.json());
 app.use(cors());
 
+app.use(express.static(path.resolve(__dirname, "build")));
 //routes
 app.use("/api/users",userRoutes);
 app.use("/api/auth",authRoutes);
-
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
-
-// Handle React routing, return all requests to React app
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
-
+app.get("*", (req, res) =>
+  res.sendFile(path.resolve("build", "index.html"))
+);
 const port=process.env.PORT || 8080;
 app.listen(port,()=>console.log(`Listening on port ${port}..`));
