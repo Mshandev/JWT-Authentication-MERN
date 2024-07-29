@@ -16,9 +16,9 @@ This repository hosts the source code for the MERN Authentication project, a rob
 
 ## Screenshots
 
-![Login](https://i.ibb.co/f49ynKx/authentication-login.png)
-
 ![Signup](https://i.ibb.co/qjffkkJ/authentication-signup.png)
+
+![Login](https://i.ibb.co/tsLdgY8/authentication-login.png)
 
 ![Main](https://i.ibb.co/qm7WVyw/authentication-main.png)
 
