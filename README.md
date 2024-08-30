@@ -8,22 +8,32 @@ This repository hosts the source code for the MERN Authentication project, a rob
 
 ## Features
 
-- User Signup API: Allows new users to register by creating an account.
-- User Login API: Authenticates users and generates a JWT token for secure access.
-- JWT Authentication: Secures APIs by requiring a valid token for protected routes.
-- Password Hashing with Bcrypt: Ensures that passwords are securely stored in the database.
+- Login & Signup Pages: Secure user authentication with email and password.
+- Home Page: A user-friendly home page accessible after login.
+- Password Hashing: Secure password storage using Bcrypt.
+- JWT Authentication: User authentication with JSON Web Tokens (JWT), stored in local storage to keep users logged in.
+- Logout: Option to log out and invalidate the session.
+
+## Screenshots
+
+![Signup](https://i.ibb.co/qjffkkJ/authentication-signup.png)
+
+![Login](https://i.ibb.co/tsLdgY8/authentication-login.png)
+
+![Main](https://i.ibb.co/qm7WVyw/authentication-main.png)
+
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-    git clone https://github.com/Mshandev/Login-Signup-APIs
+    git clone https://github.com/Mshandev/MERN-Authentication-JWT
 ```
 Go to the project directory
 
 ```bash
-    cd Login-Signup-APIs-main
+    cd MERN-Authentication-JWT
 ```
 Install dependencies
 
@@ -43,9 +53,14 @@ Start the server
     npm start
 ```
 ## Tech Stack
+* [React](https://reactjs.org/)
 * [Node.js](https://nodejs.org/en)
 * [Express.js](https://expressjs.com/)
 * [Mongodb](https://www.mongodb.com/)
+
+## Deployment
+
+The application is deployed on Vercel.
 
 ## Contributing
 
